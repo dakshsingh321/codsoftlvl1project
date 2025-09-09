@@ -1,0 +1,249 @@
+/* Global Styles */
+*
+
+{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+    font-family: 'Segoe UI', sans-serif;
+}
+
+
+body {
+    line-height: 1.6;
+    scroll-behavior: smooth;
+}
+
+/* Navbar */
+nav {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    padding: 1rem 3rem;
+    background: rgba(0,0,0,0.7);
+    position: fixed;
+    width: 100%;
+    z-index: 10;
+}
+
+nav .logo {
+    color: #fff;
+    font-size: 1.5rem;
+    font-weight: bold;
+}
+
+nav ul {
+    display: flex;
+    list-style: none;
+}
+
+nav ul li {
+    margin-left: 2rem;
+}
+
+nav ul li a {
+    color: #fff;
+    text-decoration: none;
+    font-weight: 500;
+    transition: color 0.3s;
+}
+
+nav ul li a:hover {
+    color: #ff6b6b;
+}
+
+/* Hero Section */
+.hero {
+    height: 70vh; /* Full screen */
+    background: url('../images/hero1.jpg') center/cover no-repeat;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    text-align: center;
+    color: #fff;
+    position: relative;
+}
+
+.hero::after {
+    content: '';
+    position: absolute;
+    top:0;
+    left:0;
+    width: 100%;
+    height: 100%;
+    background: rgba(0,0,0,0.5);
+}
+
+.hero-text {
+    position: relative;
+    max-width: 700px;
+    padding: 0 20px;
+}
+
+.hero h1 {
+    font-size: 3rem;
+    margin-bottom: 1rem;
+}
+
+.hero p {
+    font-size: 1.2rem;
+    margin-bottom: 2rem;
+}
+
+.btn {
+    padding: 0.8rem 2rem;
+    background: #ff6b6b;
+    color: #fff;
+    text-decoration: none;
+    border-radius: 5px;
+    transition: background 0.3s;
+}
+
+.btn:hover {
+    background: #ff4757;
+}
+
+/* Destinations */
+.destinations {
+    padding: 5rem 3rem;
+    background: #f7f7f7;
+    text-align: center;
+}
+
+.destinations h2 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.card {
+    position: relative;
+    overflow: hidden;
+    width: 300px;
+    border-radius: 10px;
+    cursor: pointer;
+}
+
+.card img {
+    width: 100%;
+    height: 200px;
+    object-fit: cover;
+    transition: transform 0.5s, filter 0.5s;
+}
+
+.card:hover img {
+    transform: scale(1.1);
+    filter: brightness(70%);
+}
+
+.overlay {
+    position: absolute;
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100%;
+    color: #fff;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    opacity: 0;
+    transition: opacity 0.5s;
+    text-align: center;
+    padding: 1rem;
+}
+
+.card:hover .overlay {
+    opacity: 1;
+}
+
+/* Reviews */
+.reviews {
+    padding: 5rem 3rem;
+    background: #fff;
+    text-align: center;
+}
+
+.reviews h2 {
+    margin-bottom: 3rem;
+    font-size: 2rem;
+}
+
+.review-cards {
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: center;
+    gap: 2rem;
+}
+
+.review {
+    background: #f7f7f7;
+    padding: 2rem;
+    border-radius: 10px;
+    width: 250px;
+}
+
+/* Newsletter */
+.newsletter {
+    padding: 5rem 3rem;
+    background: #ff6b6b;
+    text-align: center;
+    color: #fff;
+}
+
+.newsletter form {
+    margin-top: 2rem;
+}
+
+.newsletter input[type="email"] {
+    padding: 0.8rem;
+    width: 250px;
+    border: none;
+    border-radius: 5px;
+    margin-right: 1rem;
+}
+
+.newsletter button {
+    padding: 0.8rem 1.5rem;
+    border: none;
+    background: #fff;
+    color: #ff6b6b;
+    border-radius: 5px;
+    cursor: pointer;
+    transition: background 0.3s, color 0.3s;
+}
+
+.newsletter button:hover {
+    background: #ffecec;
+    color: #ff3b3b;
+}
+
+/* Footer */
+footer {
+    text-align: center;
+    padding: 2rem;
+    background: #222;
+    color: #fff;
+}
+
+/* Responsive */
+@media (max-width: 768px) {
+    .cards, .review-cards {
+        flex-direction: column;
+        align-items: center;
+    }
+
+    .hero h1 {
+        font-size: 2rem;
+    }
+
+    .hero p {
+        font-size: 1rem;
+    }
+}
