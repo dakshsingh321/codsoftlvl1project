@@ -1,0 +1,190 @@
+/* Import Google Fonts */
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;600;700&display=swap');
+
+/* General Styles */
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Poppins", sans-serif;
+}
+
+body {
+  background: linear-gradient(135deg, #f9f9f9, #e3f2fd);
+  color: #333;
+  line-height: 1.6;
+}
+
+/* Header / Navbar */
+header {
+  background: linear-gradient(90deg, #6a11cb, #2575fc);
+  color: white;
+  padding: 20px 0;
+  text-align: center;
+  box-shadow: 0 4px 10px rgba(0,0,0,0.2);
+}
+
+header h1 {
+  font-size: 2.2rem;
+  font-weight: 700;
+  letter-spacing: 2px;
+}
+
+header p {
+  font-size: 1rem;
+  margin-top: 5px;
+  opacity: 0.9;
+}
+
+/* Navbar */
+nav {
+  background: #222;
+  padding: 15px;
+  text-align: center;
+}
+
+nav ul {
+  list-style: none;
+  display: flex;
+  justify-content: center;
+  gap: 25px;
+}
+
+nav ul li a {
+  text-decoration: none;
+  color: #fff;
+  font-weight: 600;
+  letter-spacing: 1px;
+  transition: color 0.3s ease, transform 0.2s ease;
+}
+
+nav ul li a:hover {
+  color: #ffce54;
+  transform: scale(1.1);
+}
+
+/* Hero Section */
+.hero {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+  padding: 40px;
+  background: #fff;
+  border-radius: 15px;
+  margin: 30px auto;
+  width: 80%;
+  box-shadow: 0 5px 15px rgba(0,0,0,0.1);
+  text-align: center;
+}
+
+.hero img {
+  width: 200px;   /* minimized hero */
+  height: 200px;
+  border-radius: 50%;
+  border: 5px solid #2575fc;
+  object-fit: cover;
+  margin-bottom: 20px;
+}
+
+.hero h2 {
+  font-size: 2rem;
+  color: #444;
+  font-weight: 700;
+}
+
+.hero p {
+  font-size: 1.1rem;
+  color: #555;
+  margin: 10px 0 20px;
+  max-width: 600px;
+}
+
+.hero .btn {
+  display: inline-block;
+  background: linear-gradient(90deg, #ff512f, #dd2476);
+  color: white;
+  padding: 12px 25px;
+  margin: 10px;
+  text-decoration: none;
+  border-radius: 30px;
+  transition: all 0.3s ease;
+  font-weight: bold;
+}
+
+.hero .btn:hover {
+  background: linear-gradient(90deg, #dd2476, #ff512f);
+  box-shadow: 0 6px 15px rgba(0,0,0,0.2);
+}
+/* About Section */
+  /* About Section */
+#about {
+  display: flex;
+  flex-direction: column;      /* Stack image and text vertically */
+  align-items: center;         /* Center horizontally */
+  background: #fff;
+  border-radius: 10px;
+  padding: 20px 25px;
+  margin: 20px auto;
+  width: 60%;
+  box-shadow: 0 3px 8px rgba(0,0,0,0.1);
+  text-align: center;          /* Center text inside */
+  gap: 15px;                   /* Space between image and text */
+}
+#about img {
+  width: 250px;
+  height: 250px;
+  border-radius: 12px;          /* Rounded corners for a square */
+  object-fit: contain;          /* Fit entire image inside without cropping */
+  border: 4px solid #6a11cb;   /* Square border */
+  background-color: white;      /* Optional: background inside border */
+  padding: 5px;                 /* Padding inside border to avoid clipping */
+  box-sizing: border-box;
+  display: block;               /* Remove inline spacing */
+  margin: 0 auto;               /* Center image horizontally if needed */
+}
+/* Footer */
+footer {
+  background: #222;
+  color: #fff;
+  text-align: center;          /* Center footer text */
+  padding: 15px 0;
+  margin-top: 40px;
+  font-size: 0.9rem;
+}
+/* Resume Section */
+#resume {
+  text-align: center;
+  padding: 30px;   /* smaller padding */
+}
+
+#resume h2 {
+  font-size: 1.8rem;
+  font-weight: 700;
+  margin-bottom: 15px;
+}
+
+/* Resume Buttons */
+.resume-buttons {
+  display: flex;
+  justify-content: center;
+  gap: 15px;
+  flex-wrap: wrap;
+}
+
+.resume-buttons .btn {
+  background: linear-gradient(90deg, #36d1dc, #5b86e5);
+  color: white;
+  padding: 10px 20px;
+  font-size: 0.95rem;
+  text-decoration: none;
+  border-radius: 25px;
+  transition: all 0.3s ease;
+  font-weight: 600;
+}
+
+.resume-buttons .btn:hover {
+  background: linear-gradient(90deg, #5b86e5, #36d1dc);
+  box-shadow: 0 5px 12px rgba(0,0,0,0.15);
+  transform: translateY(-3px);
+}
